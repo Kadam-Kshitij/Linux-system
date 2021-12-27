@@ -1,0 +1,15 @@
+// Gives the processor time consumed by the program
+// To get number of seconds we divide it by CLOCKS_PER_SEC
+
+int main()
+{
+	clock_t t;
+	t = clock();
+
+	foo( 1000000 );
+
+	t = clock() - t;
+	printf( "CPU time taken = %f\n", (double)(t) / CLOCKS_PER_SEC );        // 0.005286
+	printf( "CLOCKS_PER_SEC = %ld\n", CLOCKS_PER_SEC );                     // 1000000
+	printf( "t = %f\n", (double)(t) );                                      // 5286.0000
+}
