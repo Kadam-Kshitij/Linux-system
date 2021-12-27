@@ -1,0 +1,19 @@
+// Fork creates an identical child process.
+// Return value is zero in child process and pid of child process in parent process.
+
+int main()
+{
+	pid_t ret;
+	ret = fork();
+
+	if ( ret == 0 )
+	{
+		printf( "Child process\n" );
+		printf( "Child process pid = %d\n", getpid() );     // Same as Parent process return value.
+	}
+	else
+	{
+		printf( "Parent process\n" );
+		printf( "Parent process child's pid =%d\n", ret );
+	}
+}
