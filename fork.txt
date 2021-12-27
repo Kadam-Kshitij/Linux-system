@@ -1,5 +1,6 @@
 // Fork creates an identical child process.
 // Return value is zero in child process and pid of child process in parent process.
+// If fork() is called three times, eight processes are created.
 
 int main()
 {
