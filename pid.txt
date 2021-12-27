@@ -1,0 +1,11 @@
+// getpid() and getppid() returns the current processes pid and parent pid.
+
+int main()
+{
+	pid_t pid, ppid;
+
+	pid = getpid();
+	ppid = getppid();
+	printf( "pid = %d\n", pid );
+	printf( "ppid = %d\n", ppid );
+}
