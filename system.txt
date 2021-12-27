@@ -1,0 +1,8 @@
+// System call executes the command provided to the function and display the output.
+
+const char* COMMAND = "pwd | awk -F \"/\" '{print $2,$3}'";	
+
+int main()
+{
+	system( COMMAND );
+}
