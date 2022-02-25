@@ -1,0 +1,15 @@
+fd - Unique identifier for each file or io resource
+
+Major number - Which driver controls the device
+Minor number - Used by the driver to identify the different devices
+
+/dev - Files which represent devices
+
+inode - An inode is a data structure that stores various information about a file in Linux,
+such as the access mode (read, write, execute permissions), ownership, file type, file size, group, number of links, etc
+
+Hard link - Take same inode number. If original file is removed then hard link still exists.
+
+/proc
+It contains useful information about the processes that are currently running, it is regarded as control and information center for kernel
+
