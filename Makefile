@@ -35,3 +35,6 @@ uninstall:
 
 .PHONY: all clean install uninstall
 // PHONY targets are targets which will be considered out of date irrespective of file system state
+
+static : ${OBJS}
+        ar rcs libStaticKMath.a ${OBJS}
