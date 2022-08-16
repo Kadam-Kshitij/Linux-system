@@ -34,3 +34,4 @@ uninstall:
 	rm -rf /usr/lib/${TARGET}
 
 .PHONY: all clean install uninstall
+// PHONY targets are targets which will be considered out of date irrespective of file system state
